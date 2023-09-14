@@ -1,0 +1,11 @@
+profiles: latest
+packs:
+  -
+    target: win
+    products: [master]
+    agentType: docker
+    enableBuildProfile: True
+  -
+    target: linux
+    products: [master]
+    agentType: docker

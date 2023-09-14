@@ -1,0 +1,15 @@
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index a1351d8..7ac1ec6 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -5,8 +5,8 @@ include_directories(include)
+ include_directories(${NATS_PLATFORM_INCLUDE})
+ 
+ if(NATS_BUILD_WITH_TLS)
+-  include_directories(${OPENSSL_INCLUDE_DIR})
+-  set(NATS_OPENSSL_LIBS "${OPENSSL_LIBRARIES}")
++  include_directories(${openssl_INCLUDE_DIR})
++  set(NATS_OPENSSL_LIBS "${openssl_LIBRARIES}")
+ endif(NATS_BUILD_WITH_TLS)
+ 
+ if(NATS_BUILD_STREAMING)
